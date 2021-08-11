@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 import 'package:first_app/widgets/user_transactions.dart';
 =======
 //expense App
->>>>>>> 3dd722bba92d30898f386970012b858ab778bed2
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
