@@ -11,7 +11,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Expense Recorder',
+      theme: ThemeData(
+          primarySwatch: Colors.green,
+          accentColor: Colors.pink,
+          appBarTheme: AppBarTheme(
+              color: Colors.pink,
+              textTheme: ThemeData.light().textTheme.copyWith(
+                      title: TextStyle(
+                    fontFamily: 'OpenSans',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ))),
+          fontFamily: 'Quicksands',
+          textTheme: ThemeData.light().textTheme.copyWith(
+                  title: TextStyle(
+                fontFamily: 'Quicksands',
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ))),
       home: MyHomePage(),
     );
   }
@@ -47,6 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _userTransacations.add(newTx);
     });
   }
+
   //showing up the text area when floating button is pressed.
   void _startAddNewTransacction(BuildContext ctx) {
     showModalBottomSheet(
@@ -65,7 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My First Flutter App'),
+        title: Text(
+          'Expense Recorder',
+        ),
         actions: [
           IconButton(
             onPressed: () => _startAddNewTransacction(context),
