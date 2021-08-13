@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _userTransacations.add(newTx);
     });
   }
-
+  //showing up the text area when floating button is pressed.
   void _startAddNewTransacction(BuildContext ctx) {
     showModalBottomSheet(
       context: ctx,
@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      //adding a floating button
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () => _startAddNewTransacction(context),
