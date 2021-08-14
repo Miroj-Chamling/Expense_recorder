@@ -42,6 +42,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransacations = [
+    /*
     Transaction(
       id: 't1',
       title: 'new tshirt',
@@ -54,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       amount: 199.99,
       date: DateTime.now(),
     ),
+    */
   ];
   void _addNewTransaction(String txTitle, double txAmount) {
     final newTx = Transaction(
