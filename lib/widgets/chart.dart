@@ -1,7 +1,9 @@
+import 'package:first_app/Models/transaction.dart';
 import 'package:flutter/material.dart';
 
 //this is a stateless widget
 class Chart extends StatelessWidget {
+  final List<Transaction> recentTranscations;
   //this is a getter...
   //this is a map...
   List<Map<String, Object>> get groupedTransactionValues {
