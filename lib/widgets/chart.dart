@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//this is a stateless widget
 class Chart extends StatelessWidget {
   //this is a getter...
   //this is a map...
