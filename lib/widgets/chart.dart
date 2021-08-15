@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Chart extends StatelessWidget {
-  //this is a getter..
+  //this is a getter...
   List<Map<String, Object>> get groupedTransactionValues {
     return List.generate(7, (index) {
-      return {'Day': 'T', 'Amount': 300};
+      return {'Day': 'T', 'Amount': 400};
     });
   }
 
