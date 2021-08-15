@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:first_app/Models/transaction.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -22,9 +24,9 @@ class Chart extends StatelessWidget {
           totalSum += recentTranscations[i].amount;
         }
       }
-      print(DateFormat.E(weekDay));
+      print(DateFormat.E().format(weekDay));
       print(totalSum);
-      return {'Day': DateFormat.E(weekDay), 'Amount': totalSum};
+      return {'Day': DateFormat.E().format(weekDay), 'Amount': totalSum};
     });
   }
 
