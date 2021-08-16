@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ChartBar extends StatelessWidget {
   final String label;
   final double spendingAmount;
-  final double spendingPctOfTotal;
+  final double spendingPctOfTotal; //spending precentage of total.
 
   ChartBar(this.label, this.spendingAmount, this.spendingPctOfTotal);
 
@@ -21,6 +21,7 @@ class ChartBar extends StatelessWidget {
           height: 80,
           width: 10,
           child: Stack(
+            //these are the child of the Chart where chlidren is the base and fractionallysized box at the top
             children: [
               Container(
                 decoration: BoxDecoration(
@@ -36,7 +37,7 @@ class ChartBar extends StatelessWidget {
                 heightFactor: spendingPctOfTotal,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor,
+                    color: Theme.of(context).primaryColor, //it takes the color from the default context
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
