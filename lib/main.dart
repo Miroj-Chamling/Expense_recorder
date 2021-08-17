@@ -16,23 +16,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Expense Recorder',
       theme: ThemeData(
-          primarySwatch: Colors.green,
-          accentColor: Colors.pink,
-          appBarTheme: AppBarTheme(
-              color: Colors.pink,
-              textTheme: ThemeData.light().textTheme.copyWith(
-                      title: TextStyle(
-                    fontFamily: 'OpenSans',
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ))),
-          fontFamily: 'Quicksands',
-          textTheme: ThemeData.light().textTheme.copyWith(
-                  title: TextStyle(
+        primarySwatch: Colors.green,
+        accentColor: Colors.pink,
+        appBarTheme: AppBarTheme(
+            color: Colors.pink,
+            textTheme: ThemeData.light().textTheme.copyWith(
+                    title: TextStyle(
+                  fontFamily: 'OpenSans',
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ))),
+        fontFamily: 'Quicksands',
+        textTheme: ThemeData.light().textTheme.copyWith(
+              title: TextStyle(
                 fontFamily: 'Quicksands',
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
-              ))),
+              ),
+            ),
+      ),
       home: MyHomePage(),
     );
   }
@@ -70,12 +72,13 @@ class _MyHomePageState extends State<MyHomePage> {
     }).toList();
   }
 
-  void _addNewTransaction(String txTitle, double txAmount) {
+  void _addNewTransaction(
+      String txTitle, double txAmount, DateTime choosenDate) {
     final newTx = Transaction(
         id: DateTime.now().toString(),
         title: txTitle,
         amount: txAmount,
-        date: DateTime.now());
+        date: choosenDate);
     setState(() {
       _userTransacations.add(newTx);
     });
