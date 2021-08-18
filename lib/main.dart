@@ -47,22 +47,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final List<Transaction> _userTransacations = [
-    /*
-    Transaction(
-      id: 't1',
-      title: 'new tshirt',
-      amount: 99.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'new pants',
-      amount: 199.99,
-      date: DateTime.now(),
-    ),
-    */
-  ];
+  final List<Transaction> _userTransacations = [];
   List<Transaction> get _recentTransactions {
     return _userTransacations.where((tx) {
       return tx.date.isAfter(
