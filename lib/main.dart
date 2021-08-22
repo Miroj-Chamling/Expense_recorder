@@ -69,8 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   bool _showChart = false;
 
-  final List<Transaction> _userTransacations = [];
-
   List<Transaction> get _recentTransactions {
     return _userTransacations.where((tx) {
       return tx.date.isAfter(
