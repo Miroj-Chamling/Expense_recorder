@@ -1,5 +1,3 @@
-import 'package:first_app/widgets/chart.dart';
-
 import './widgets/transaction_list.dart';
 
 import './widgets/new_transaction.dart';
@@ -70,6 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
 
   bool _showChart = false;
+
+  final List<Transaction> _userTransacations = [];
 
   List<Transaction> get _recentTransactions {
     return _userTransacations.where((tx) {
