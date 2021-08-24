@@ -4,7 +4,7 @@
 This App allows you to record your daily and weekly expenses.
 
 # Flutter
-This app is based on flutter and is android based app, completed in Dart code.
+This app is based on flutter and is android based app, completed in Dart code.And is fully responsive as well for both the landscape and potrait modes.
 
 
 
