@@ -54,7 +54,7 @@ class _NewTransactionState extends State<NewTransaction> {
             top: 10,
             right: 10,
             left: 10,
-            bottom: MediaQuery.of(context).viewInsets.bottom + 13,
+            bottom: MediaQuery.of(context).viewInsets.bottom + 13, //this is the responsive changes for small devices.
           ),
           child: Column(
             children: [
